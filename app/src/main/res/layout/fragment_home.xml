@@ -1,0 +1,85 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:id="@+id/fragmentHome"
+    tools:context="id.rizalprasetya.hobike.HomeFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Selamat Datang di hobike "
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:paddingTop="10dp" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:paddingTop="20dp"
+           android:paddingBottom="20dp">
+
+           <Button
+               android:layout_width="0dp"
+               android:layout_height="80dp"
+               android:id="@+id/btn_sewa"
+               android:text="Sewa \nSepeda?"
+               android:layout_weight="1"
+               android:layout_marginRight="5dp"
+               android:layout_marginEnd="5dp"
+               android:background="@color/light_blue"/>
+
+           <Button
+               android:layout_width="0dp"
+               android:layout_height="80dp"
+               android:id="@+id/btn_kembali"
+               android:text="Kembalikan \nsepeda?"
+               android:layout_weight="1"
+               android:layout_marginLeft="5dp"
+               android:layout_marginStart="5dp"
+               android:background="@color/light_blue"/>
+
+       </LinearLayout>
+
+        <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:paddingTop="20dp"
+           android:paddingBottom="20dp">
+
+           <Button
+               android:layout_width="0dp"
+               android:layout_height="80dp"
+               android:id="@+id/btn_cekHotel"
+               android:text="CEK LOKASI HOTEL"
+               android:layout_weight="1"
+               android:layout_marginRight="5dp"
+               android:layout_marginEnd="5dp"
+               android:background="@color/light_blue"/>
+
+           <Button
+               android:layout_width="0dp"
+               android:layout_height="80dp"
+               android:id="@+id/btn_cekSepeda"
+               android:text="CEK SEPEDA TERSEDIA"
+               android:layout_weight="1"
+               android:layout_marginLeft="5dp"
+               android:layout_marginStart="5dp"
+               android:background="@color/light_blue"/>
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+
+</FrameLayout>
