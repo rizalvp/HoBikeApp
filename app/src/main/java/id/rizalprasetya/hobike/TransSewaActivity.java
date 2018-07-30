@@ -1,6 +1,7 @@
 package id.rizalprasetya.hobike;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +14,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 public class TransSewaActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
@@ -32,7 +34,26 @@ public class TransSewaActivity extends AppCompatActivity implements AdapterView.
         actionBar.setHomeAsUpIndicator(R.drawable.ic_panah);
         actionBar.setDisplayHomeAsUpEnabled(true);
 
+        //todo deklarasi
         Button btnDashboard = (Button)findViewById(R.id.btn_dashboard);
+        TextView txtUsername = (TextView)findViewById(R.id.txt_namaDetailSewa);
+        TextView txtHotel = (TextView)findViewById(R.id.txt_hotelDetailSewa);
+        TextView txtSepeda = (TextView)findViewById(R.id.txt_SepedaDetailSewa);
+        TextView txtWaktu = (TextView)findViewById(R.id.txt_waktuSewa);
+
+        //todo ambil shared pref
+        SharedPreferences preferences = this.getSharedPreferences("SEWA", MODE_PRIVATE);
+        /*txtUsername.setText(preferences.getString("NAME", ""));
+        txtHotel.setText(preferences.getString("HOTEL_AWAL", ""));
+        txtSepeda.setText(preferences.getString("SEPEDA", ""));*/
+        txtWaktu.setText(preferences.getString("WAKTU_SEWA", ""));
+
+        //todo putExtra dari sewa fragment
+        txtUsername.setText(getIntent().getStringExtra("dataNama"));
+        txtHotel.setText(getIntent().getStringExtra("dataHotel"));
+        txtSepeda.setText(getIntent().getStringExtra("dataSepeda"));
+
+
         btnDashboard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

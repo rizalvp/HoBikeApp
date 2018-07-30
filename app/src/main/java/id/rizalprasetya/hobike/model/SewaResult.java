@@ -3,26 +3,24 @@ package id.rizalprasetya.hobike.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-import java.util.List;
-
 /**
  * Created by Rizal Prasetya on 16/07/2018.
  */
 
-public class MemberResult {
-    @SerializedName("member")
+public class SewaResult {
+    @SerializedName("sewa")
     @Expose
-    private Member member;
+    private Sewa sewa;
     @SerializedName("pesan")
     @Expose
     private String pesan;
 
-    public Member getMember() {
-        return member;
+    public Sewa getSewa() {
+        return sewa;
     }
 
-    public void setMember(Member member) {
-        this.member = member;
+    public void setSewa(Sewa sewa) {
+        this.sewa = sewa;
     }
 
     public String getPesan() {
@@ -32,5 +30,4 @@ public class MemberResult {
     public void setPesan(String pesan) {
         this.pesan = pesan;
     }
-
 }

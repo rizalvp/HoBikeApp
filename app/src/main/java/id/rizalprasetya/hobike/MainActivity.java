@@ -7,6 +7,8 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -17,6 +19,17 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.TextView;
+
+import java.lang.reflect.Member;
+import java.util.List;
+
+import id.rizalprasetya.hobike.model.MemberResult;
+import id.rizalprasetya.hobike.network.ApiClient;
+import id.rizalprasetya.hobike.network.ApiInterface;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -25,6 +38,9 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        /*userNameDrawer("");*/
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -48,8 +64,15 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
+        SharedPreferences preferences = getSharedPreferences("SESSION", MODE_PRIVATE);
+
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_home);
         navigationView.setNavigationItemSelectedListener(this);
+
+        View headerView = navigationView.getHeaderView(0);
+        TextView txtUsername = (TextView)headerView.findViewById(R.id.txt_usernameDrawer);
+        txtUsername.setText(preferences.getString("NAME", ""));
+
     }
 
     @Override
@@ -131,5 +154,7 @@ public class MainActivity extends AppCompatActivity
         startActivity(i);
         finish();
     }
+
+    /**/
 
 }

@@ -32,81 +32,63 @@
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ID"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:layout_marginBottom="5dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
                     android:text="Nama Penyewa"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:layout_marginBottom="5dp"/>
+                    android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
                     android:text="Hotel Sewa"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:layout_marginBottom="5dp"/>
+                    android:textSize="20sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ID Sepeda"
+                    android:layout_marginBottom="5dp"
+                    android:text="Sepeda"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:layout_marginBottom="5dp"/>
+                    android:textSize="20sp" />
 
             </LinearLayout>
 
-             <LinearLayout
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:orientation="vertical">
+
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="30624FA8"
-                    android:id="@+id/txt_id"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:layout_marginBottom="5dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="rizalvp"
                     android:id="@+id/txt_nama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="rizalvp"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:layout_marginBottom="5dp"/>
+                    android:textSize="20sp" />
 
                 <Spinner
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:id="@+id/spinner_hotelSewa"
-                    android:layout_marginBottom="5dp"/>
-
-                <Spinner
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/spinner_idSepeda"/>
+                    android:layout_marginBottom="5dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_idSepeda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
 
             </LinearLayout>
-
-
 
         </LinearLayout>
 
@@ -117,26 +99,32 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btn_sewaOK"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="40dp"
                 android:layout_marginTop="30dp"
                 android:background="@color/light_blue"
-                android:text="Sewa"
-                android:id="@+id/btn_sewaOK"/>
+                android:text="Sewa" />
 
             <Button
+                android:id="@+id/btn_sewaCancel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:background="@color/light_blue"
-                android:text="Cancel"
-                android:id="@+id/btn_sewaCancel"/>
+                android:text="Cancel" />
 
         </LinearLayout>
 
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/txt_idMemberSewa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:visibility="invisible" />
 
+    </LinearLayout>
 
 </FrameLayout>

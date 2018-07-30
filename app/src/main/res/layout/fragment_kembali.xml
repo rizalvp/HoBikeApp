@@ -36,27 +36,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ID Sewa"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:layout_marginBottom="5dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="ID"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:layout_marginBottom="5dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:text="Nama Penyewa"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:layout_marginBottom="5dp"/>
-
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -87,8 +70,8 @@
                     android:layout_height="wrap_content"
                     android:text="Waktu Sewa"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
-
+                    android:textSize="20sp"
+                    android:layout_marginBottom="5dp"/>
 
             </LinearLayout>
 
@@ -101,26 +84,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="SWHBK01"
-                    android:id="@+id/txt_idSewa"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:layout_marginBottom="5dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="30624FA8"
-                    android:id="@+id/txt_id"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:layout_marginBottom="5dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:text="rizalvp"
-                    android:id="@+id/txt_nama"
+                    android:id="@+id/txt_namaKembali"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:layout_marginBottom="5dp"/>
@@ -139,14 +104,15 @@
                     android:layout_height="wrap_content"
                     android:text="Sepeda 01"
                     android:textColor="@color/black"
-                    android:id="@+id/txt_idSepeda"
+                    android:id="@+id/txt_SepedaKembali"
                     android:textSize="20sp"
                     android:layout_marginBottom="5dp"/>
 
                 <Spinner
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/spinner_hotelKembali">
+                    android:id="@+id/spinner_hotelKembali"
+                    android:layout_marginBottom="5dp">
 
                 </Spinner>
 
@@ -155,7 +121,7 @@
                     android:layout_height="wrap_content"
                     android:text="10.00"
                     android:textColor="@color/black"
-                    android:id="@+id/txt_waktuSewa"
+                    android:id="@+id/txt_waktuSewaKembali"
                     android:textSize="20sp"
                     android:layout_marginBottom="5dp"/>
 

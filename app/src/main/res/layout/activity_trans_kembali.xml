@@ -78,21 +78,6 @@
                     android:orientation="vertical"
                     android:layout_weight="1">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="ID Sewa"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:layout_marginBottom="5dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="RFID"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:layout_marginBottom="5dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -113,7 +98,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="ID Sepeda"
+                        android:text="Sepeda"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:layout_marginBottom="5dp"/>
@@ -163,26 +148,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="SWHBK01"
-                        android:id="@+id/txt_idSewa"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:layout_marginBottom="5dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="30624FA8"
-                        android:id="@+id/txt_id"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:layout_marginBottom="5dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:text="rizalvp"
-                        android:id="@+id/txt_nama"
+                        android:id="@+id/txt_namaDetailKembali"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:layout_marginBottom="5dp"/>
@@ -192,7 +159,7 @@
                         android:layout_height="wrap_content"
                         android:text="Hotel Star"
                         android:textColor="@color/black"
-                        android:id="@+id/txt_hotelSewa"
+                        android:id="@+id/txt_hotelSewaDetailKembali"
                         android:textSize="20sp"
                         android:layout_marginBottom="5dp"/>
 
@@ -202,7 +169,7 @@
                         android:layout_height="wrap_content"
                         android:text="Sepeda 01"
                         android:textColor="@color/black"
-                        android:id="@+id/txt_idSepeda"
+                        android:id="@+id/txt_SepedaDetailKembali"
                         android:textSize="20sp"
                         android:layout_marginBottom="5dp"/>
 
@@ -211,7 +178,7 @@
                         android:layout_height="wrap_content"
                         android:text="Hotel Muria"
                         android:textColor="@color/black"
-                        android:id="@+id/txt_hotelKembali"
+                        android:id="@+id/txt_hotelKembaliDetail"
                         android:textSize="20sp"
                         android:layout_marginBottom="5dp"/>
 
@@ -220,7 +187,7 @@
                         android:layout_height="wrap_content"
                         android:text="10.00"
                         android:textColor="@color/black"
-                        android:id="@+id/txt_waktuSewa"
+                        android:id="@+id/txt_waktuSewaDetailKembali"
                         android:textSize="20sp"
                         android:layout_marginBottom="5dp"/>
 
